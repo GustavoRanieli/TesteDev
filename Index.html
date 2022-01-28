@@ -1,0 +1,40 @@
+<!DOCTYPE HTML5>
+<html lang="pt-bt">  
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <!---------Utilizei para pegar icones já que não consegui recortar os originais no Photoshop-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!---Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="java.js"></script>
+</head>
+<body>
+ <img class="logo" src="./img/logoshow.png" alt="Logo Show de imagens" class="logo">
+ <!--Retirada de uma Biblioteca, onde caso dê um valor invalido ele apresente a mensagem de erro com JS-->
+ <div id="login-error-msg-holder">
+    <p id="login-error-msg">User Invalido <span id="error-msg-second-line">ou password</span></p>
+</div>
+<!---Utilizar os dados configurados no JS para validação, utilizei id por conta da bliblioteca utilizada-->
+ <form class="container" id="login-form">
+
+    <!--user-->
+     <input class="user" id="username-field" placeholder="Username" type="text" name="username" required>
+
+     <!---web_dev-->
+     <input class="senha" id="password-field" placeholder="Password" type="password"  name="password" required>
+
+    <!---A tag P está sendo utilizada como ancora no CSS para centralizar esses campos abaixo-->
+    <p>
+     <input class="remember" type="checkbox" checked="checked" name="remember"><span>Remember me</span>
+     
+
+     <span class="Forgot"><a href="forgot.html">Forgot Password?</a></span>
+    </p>
+
+     <input type="submit" id="login-form-submit" value="Login" class="enviar">
+</form>
+</body>
+</html>

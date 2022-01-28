@@ -1,0 +1,115 @@
+/* Distribuir o estilo de letra no código inteiro */
+*{
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*Gradiente com a cores utilizidas retiradas do Photoshop, apenasnão consegui deixar misturado */
+body {
+    background-image: linear-gradient(225deg, #01003a 35%, #114f74, #65597f, #d66a5d, #e4b88b );
+}
+
+/*Tamanho retirado do Photshop, consegui pegar as medidas certinhas no Photshop e já está de forma responsiva */
+.logo {
+    margin: 240px auto 40px;
+    display: block;
+	width: 280px;
+    height: 230px;
+}
+
+/*Usado para esconder e centralizar a mensagem de erro */
+#login-error-msg-holder {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  #login-error-msg {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto;
+}
+/* */
+
+/*Centralização dos inputs de user e senha, medidas retiradas no Photshop pelo modelo */
+.user, .senha {
+    width: 375px;
+    height: 45px;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+/*Estilização da cor de fundo e Icone */
+.user {
+   background-color: white;
+   padding: 0 60px;
+   background-image: url(./img/user.svg);
+   background-repeat: no-repeat;
+   background-position: 2%;
+}
+
+/*Estilização da cor de fundo e Icone */
+.senha {
+    background-color: white;
+    padding: 0 60px;
+    background-image: url(./img/lock.svg);
+    background-repeat: no-repeat;
+    background-position: 2%;
+}
+
+/*Como mencionado, Tag p usada para centralizar a chackbox e o forgot */
+p {
+    text-align: center;
+    margin: 25px auto;
+}
+
+/*Ficarei devendo apenas o fundo do checkbox, tentei de diversas formas mas sempre dava conflito */
+.remember {
+    border: none;
+    margin-right: 15px;
+}
+
+span{
+    color: white;
+}
+
+.Forgot {
+    margin-left: 145px;
+}
+
+.Forgot a{
+    text-decoration: none;
+    color: #7f84a2;
+    font-style: italic;
+
+}
+
+
+/*Estilização do botão de envio, medidas retiradas no Photshop pelo modelo*/
+.enviar {
+    width: 195px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #373447;
+    border: none;
+    color: white;
+    font-size: 25px;
+
+}
